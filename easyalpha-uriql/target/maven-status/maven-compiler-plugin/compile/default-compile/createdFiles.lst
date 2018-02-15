@@ -1,0 +1,16 @@
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$CompositeExpressionContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$ComparisonOperatorContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLVisitor.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$ResolvedExpressionContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$BooleanOperatorContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$LiteralContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$NestedExpressionContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLListener.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$ExpressionContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$PropertyContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$QueryContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLLexer.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser$ComparisonExpressionContext.class
+com/abstratt/easyalpha/uriql/antlr/URIQLBaseListener.class
+com/abstratt/easyalpha/uriql/antlr/URIQLBaseVisitor.class
+com/abstratt/easyalpha/uriql/antlr/URIQLParser.class
