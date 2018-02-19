@@ -1,7 +1,5 @@
 package com.abstratt.easyalpha.core.domain
 
-import com.abstratt.easyalpha.uriql.CustomFilter
-import com.abstratt.easyalpha.uriql.CustomFilterSpecification
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.NestedRuntimeException
 import org.springframework.data.domain.Page
@@ -10,13 +8,6 @@ import org.springframework.data.domain.Sort
 import org.springframework.data.jpa.domain.Specification
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor
-import org.springframework.security.core.Authentication
-import org.springframework.security.core.GrantedAuthority
-import org.springframework.security.core.authority.SimpleGrantedAuthority
-import org.springframework.security.core.context.SecurityContextHolder
-import org.springframework.security.core.userdetails.User
-import org.springframework.security.core.userdetails.UserDetailsService
-import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Repository
 import org.springframework.stereotype.Service
@@ -50,19 +41,5 @@ fun defaultPageRequest(page: Int? = 0, limit: Int? = 100) =
         PageRequest(page ?: 0, limit ?: 100, Sort(Sort.Order("id")))
 
 
-fun getCurrentUserId(): Long? =
-        (SecurityContextHolder.getContext().authentication.principal as CustomUserDetails).userId
-
-fun getCurrentUsername(): String =
-        (SecurityContextHolder.getContext().authentication.principal as User).username
-
-fun getCurrentRoles(): Set<SecurityRole> =
-        getRoles(SecurityContextHolder.getContext().authentication)
-
-fun isCurrentRole(vararg toCheck : SecurityRole): Boolean =
-        getRoles(SecurityContextHolder.getContext().authentication).intersect(toCheck.toSet()).isNotEmpty()
-
-fun getRoles(authentication: Authentication): Set<SecurityRole> =
-        emptySet()
 
 

@@ -1,7 +1,5 @@
 package com.abstratt.easyalpha.uriql
 
-import com.abstratt.easyalpha.uriql.FilterParser
-import com.abstratt.easyalpha.uriql.JPQLRenderer
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.time.LocalDate

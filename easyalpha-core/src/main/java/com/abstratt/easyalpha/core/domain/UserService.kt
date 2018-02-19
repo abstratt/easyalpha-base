@@ -1,3 +1,4 @@
+/*
 package com.abstratt.easyalpha.core.domain;
 
 import com.abstratt.kirra.spring.BaseService
@@ -26,3 +27,4 @@ abstract class UserService<U : ApplicationUser, R : UserRepository<U>>(entityCla
     }
 }
 
+*/

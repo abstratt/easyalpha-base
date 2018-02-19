@@ -1,3 +1,4 @@
+/*
 package com.abstratt.easyalpha.core.domain;
 
 import org.springframework.beans.factory.annotation.Autowired
@@ -15,4 +16,4 @@ class CustomUserDetailsService : UserDetailsService {
             Optional.ofNullable(applicationUserService.findUserByUsername(username))
                     .map { it -> it.toUserDetails() }
                     .orElseThrow { UsernameNotFoundException(username) }
-}
+}*/

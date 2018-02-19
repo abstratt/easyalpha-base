@@ -1,3 +1,4 @@
+/*
 package com.abstratt.easyalpha.core.domain;
 
 import com.abstratt.kirra.spring.BaseEntity
@@ -28,3 +29,4 @@ fun toUserDetails(): CustomUserDetails =
 
 }
 
+*/

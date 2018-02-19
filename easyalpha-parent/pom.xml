@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <kirra-kt.version>1.1-SNAPSHOT</kirra-kt.version>
+        <kirra-boot.version>1.1-SNAPSHOT</kirra-boot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -80,8 +80,8 @@
 
             <dependency>
                 <groupId>com.abstratt.kirra</groupId>
-                <artifactId>com.abstratt.kirra.kt</artifactId>
-                <version>${kirra-kt.version}</version>
+                <artifactId>kirra-boot</artifactId>
+                <version>${kirra-boot.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>javax.ws.rs</groupId>

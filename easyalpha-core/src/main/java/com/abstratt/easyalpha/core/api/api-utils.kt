@@ -6,7 +6,6 @@ import com.abstratt.easyalpha.uriql.CustomFilter
 import com.abstratt.easyalpha.uriql.FilterParser
 import com.abstratt.easyalpha.uriql.RenderingException
 import com.abstratt.kirra.spring.BaseEntity
-import com.abstratt.kirra.spring.BaseService
 import org.apache.commons.io.IOUtils
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired

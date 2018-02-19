@@ -1,3 +1,4 @@
+/*
 package com.abstratt.easyalpha.core.tests
 
 import com.abstratt.easyalpha.core.api.LoggingInterceptor
@@ -110,4 +111,4 @@ abstract class AbstractAPITest {
     }
 
     protected final fun getTemplate() : TestRestTemplate = this.template
-}
+}*/
