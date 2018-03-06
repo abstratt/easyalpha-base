@@ -5,6 +5,7 @@ import com.abstratt.easyalpha.uriql.CustomFilterSpecification
 import com.abstratt.kirra.spring.BaseEntity
 import com.abstratt.kirra.spring.BaseRepository
 import com.abstratt.kirra.spring.BaseService
+import com.abstratt.kirra.spring.defaultPageRequest
 import org.springframework.data.domain.Page
 import org.springframework.data.jpa.domain.Specification
 import kotlin.reflect.KClass
