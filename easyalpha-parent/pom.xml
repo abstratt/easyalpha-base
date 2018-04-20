@@ -17,15 +17,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.version>1.2.31</kotlin.version>
         <spring.version>5.0.3.RELEASE</spring.version>
-        <spring-boot.version>2.0.0.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.1.RELEASE</spring-boot.version>
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
         <jackson.version>2.9.4</jackson.version>
         <junit.version>4.12</junit.version>
         <springfox.version>2.7.0</springfox.version>
 
-        <easyalpha.app>TBD</easyalpha.app>
-
-
+        <kirra.app.name>${project.artifactId}</kirra.app.name>
+        <kirra.app.version>${project.version}</kirra.app.version>
     </properties>
 
     <repositories>
@@ -86,12 +85,6 @@
                 <groupId>com.abstratt.kirra</groupId>
                 <artifactId>kirra-boot</artifactId>
                 <version>${kirra-boot.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.ws.rs</groupId>
-                        <artifactId>javax.ws.rs-api</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -230,11 +223,22 @@
                     <version>${spring-boot.version}</version>
                     <configuration>
                         <classifier>exec</classifier>
-                        <mainClass>com.abstratt.easyalpha.${easyalpha.app}.AppKt</mainClass>
+                        <mainClass>com.abstratt.easyalpha.${kirra.app.name}.AppKt</mainClass>
+                            <requiresUnpack>
+                                <dependency>
+                                    <groupId>com.abstratt.kirra</groupId>
+                                    <artifactId>kirra-boot</artifactId>
+                                </dependency>
+                            </requiresUnpack>
                     </configuration>
-                    <goals>
-                        <goal>build-info</goal>
-                    </goals>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>kotlin-maven-plugin</artifactId>

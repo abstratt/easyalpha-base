@@ -1,6 +1,6 @@
 package com.abstratt.easyalpha.core.tests
 
-import com.abstratt.easyalpha.core.infra.EasyAlphaProfile
+import com.abstratt.kirra.spring.KirraAppProfile
 import org.springframework.boot.autoconfigure.flyway.FlywayMigrationStrategy
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Profile
 
 
 @Configuration
-@Profile(EasyAlphaProfile.TESTING, EasyAlphaProfile.DEVELOPMENT)
+@Profile(KirraAppProfile.TESTING, KirraAppProfile.DEVELOPMENT)
 open class TestConfiguration {
     @Bean
     open fun cleanMigrateStrategy(): FlywayMigrationStrategy {
