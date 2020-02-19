@@ -7,7 +7,6 @@
 	<packaging>pom</packaging>
 	<modules>
 	    	<module>easyalpha-parent</module>
-	    	<module>easyalpha-uriql</module>
 		<module>easyalpha-core</module>
 	</modules>
 </project>

@@ -8,21 +8,15 @@
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <parent>
+        <groupId>com.abstratt.kirra</groupId>
+        <artifactId>kirra-java</artifactId>
+        <version>1.1-SNAPSHOT</version>
+        <relativePath>../../kirra-java/</relativePath>
+    </parent>
+
     <properties>
         <kirra-boot.version>1.1-SNAPSHOT</kirra-boot.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.version>1.2.31</kotlin.version>
-        <spring.version>5.0.3.RELEASE</spring.version>
-        <spring-boot.version>2.0.1.RELEASE</spring-boot.version>
-        <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
-        <jackson.version>2.9.4</jackson.version>
-        <junit.version>4.12</junit.version>
-        <springfox.version>2.7.0</springfox.version>
-
         <kirra.app.name>${project.artifactId}</kirra.app.name>
         <kirra.app.version>${project.version}</kirra.app.version>
     </properties>
@@ -88,7 +82,7 @@
             </dependency>
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-stdlib</artifactId>
+                <artifactId>kotlin-stdlib-jdk8</artifactId>
                 <version>${kotlin.version}</version>
             </dependency>
             <dependency>
@@ -132,6 +126,7 @@
                 <artifactId>spring-boot-starter-security</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-jpa</artifactId>
@@ -159,7 +154,7 @@
             <dependency>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-core</artifactId>
-                <version>4.2.0</version>
+                <version>${flyway.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.postgresql</groupId>
@@ -190,11 +185,6 @@
                 <version>2.6</version>
             </dependency>
             <dependency>
-                <groupId>org.antlr</groupId>
-                <artifactId>antlr4-runtime</artifactId>
-                <version>4.7.1</version>
-            </dependency>
-            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <scope>test</scope>
@@ -212,11 +202,6 @@
         </resources>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.antlr</groupId>
-                    <artifactId>antlr4-maven-plugin</artifactId>
-                    <version>4.7.1</version>
-                </plugin>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
