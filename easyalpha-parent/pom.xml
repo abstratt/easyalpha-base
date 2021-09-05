@@ -39,9 +39,9 @@
             </snapshots>
         </repository>
         <repository>
-            <id>abstratt-libs-snapshots</id>
+            <id>github</id>
             <name>Abstratt Snapshots</name>
-            <url>https://repository-textuml.forge.cloudbees.com/snapshot/</url>
+            <url>https://maven.pkg.github.com/abstratt/maven-releases/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -231,8 +231,8 @@
                     <version>${kotlin.version}</version>
                     <configuration>
                         <jvmTarget>1.8</jvmTarget>
-                        <apiVersion>1.2</apiVersion>
-                        <languageVersion>1.2</languageVersion>
+                        <apiVersion>1.5</apiVersion>
+                        <languageVersion>1.5</languageVersion>
                         <javaParameters>true</javaParameters>
                         <compilerPlugins>
                             <plugin>no-arg</plugin>
@@ -273,7 +273,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.20.1</version>
+                    <version>3.0.0-M5</version>
                     <configuration>
                         <systemProperties>
                             <spring.profiles.active>testing</spring.profiles.active>
